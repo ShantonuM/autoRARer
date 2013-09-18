@@ -1,0 +1,50 @@
+autoRARer v1.0
+
+==============
+Introduction
+==============
+autoRARer is an application to batch-archve files. 
+autoRARer lets you archive (RAR) all files in a specified folder 
+individually with a single command. Files starting with the same name, but
+having different extensions are archived onto a single RAR. For example,
+"Gone with the Wind.avi" & "Gone with the Wind.srt" are saved in the same
+RAR. You have the option of encrypting the RARs with random passwords, a
+preset password for each file, or just the filename as the password (the 
+filename is hidden by renaming the RAR as the hash of the original 
+filename). A log is generated in the folder containing the files 
+specifying the details of the archives. 
+
+==============
+Usage
+==============
+autoRARer is written in python and the application is open-source. It can
+be run directly by interpreting from the source code if you have a Python
+interpreter installed on your computer or by running the autoRARer 
+executable in the dist folder of the project.
+
+First, open command line on windows and change to the directory where you
+have downloaded the project folder. You can drag and drop the folder to 
+the cmd window after typing cd, the path will appear in quotes. For some
+reason, however, this drag-drop feature does not work in the admin mode
+of cmd, ping Microsoft guys for this ;)
+
+Then, there are two ways of using autoRARer:
+1) Run autoRARer.exe
+	a) Change to the directory "dist"
+	b) Type "autoRARer.exe --folder=<your_folder>"
+	c) You can type "autoRARer.exe -h" or "autoRARer.exe --help" for more 
+	   help
+2) Run the script autoRARer.py
+	a) Type "autoRARer.py --folder=<your_folder>"
+	b) You can type "main.py -h" or "main.py --help" for more help
+	
+==============
+Configuration
+==============
+The application requires all files to be archived in a single folder which
+is later given as the argument to --folder option when running. Recursing
+into subdirectories is currently not supported. 
+
+The file config.ini in the config folder enlists the various options 
+available while archiving files. Description of the options are provided
+in the file itself.
