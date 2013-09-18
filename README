@@ -30,13 +30,15 @@ of cmd, ping Microsoft guys for this ;)
 
 Then, there are two ways of using autoRARer:
 1) Run autoRARer.exe
-	a) Change to the directory "dist"
+	a) Change to the directory "bin"
 	b) Type "autoRARer.exe --folder=<your_folder>"
 	c) You can type "autoRARer.exe -h" or "autoRARer.exe --help" for more 
 	   help
 2) Run the script autoRARer.py
-	a) Type "autoRARer.py --folder=<your_folder>"
-	b) You can type "main.py -h" or "main.py --help" for more help
+	a) Change to the directory "src"
+	b) Type "autoRARer.py --folder=<your_folder>"
+	c) You can type "autoRARer.py -h" or "autoRARer.py --help" for more 
+	   help
 	
 ==============
 Configuration
