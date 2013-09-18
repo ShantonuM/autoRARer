@@ -62,7 +62,7 @@ if __name__ == '__main__':
 			folder = str(args[0])
 		if "-c" in item:
 			if len(args) < 2:
-				print "Config file should be specified after -f option\n"
+				print "Config file should be specified after -c option\n"
 				usage()
 				sys.exit(2)
 			configFile = str(args[1])
